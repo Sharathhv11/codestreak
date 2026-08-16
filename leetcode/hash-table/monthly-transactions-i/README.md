@@ -4,7 +4,7 @@
 - **Platform:** LeetCode
 - **Concept / Pattern:** Hash Table
 - **Language:** mysql
-- **Runtime:** 608 ms
+- **Runtime:** 636 ms
 - **Memory:** 0B
 - **Tags:** None
 
@@ -13,7 +13,7 @@
 - **Space Complexity:** O(N)
 
 ## Explanation
-The query first calculates the total transactions per month and country, and then it performs a left join with a subquery that calculates approved transactions per month and country. The subquery also takes O(N) time. The overall time and space complexity are O(N) due to processing the entire transaction table twice and storing intermediate results.
+The solution involves scanning the transactions table twice: once for all transactions and once for approved transactions. The grouping and joining operations also depend on the number of rows. Therefore, the time and space complexity are linear with respect to the number of transactions (N).
 
 ---
 *Generated automatically by [CodeStreak](https://github.com/Sharathhv11/CodeStreak-webApp).*
