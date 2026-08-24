@@ -13,7 +13,7 @@
 - **Space Complexity:** O(N)
 
 ## Explanation
-The solution uses backtracking to generate all possible subsets. Sorting the input array first allows for efficient skipping of duplicate subsets by checking the last element added before a recursive call to include the current element. The time complexity is dominated by generating 2^N subsets, and for each subset, copying it takes O(N) time. Space complexity is O(N) for the recursion depth and the subset storage.
+The solution uses a backtracking approach to generate all subsets. It sorts the input array to handle duplicates efficiently. At each step, it decides whether to include the current element or not, and skips duplicate elements to avoid redundant subsets, resulting in O(N * 2^N) time complexity and O(N) space complexity for the recursion stack and subset storage.
 
 ---
 *Generated automatically by [CodeStreak](https://github.com/Sharathhv11/CodeStreak-webApp).*
