@@ -13,7 +13,7 @@
 - **Space Complexity:** O(2^N * N)
 
 ## Explanation
-The solution uses backtracking to explore all possible subsets. Sorting the input array first allows for efficient duplicate handling by skipping branches that would generate redundant subsets. The time complexity is O(2^N * N) because there are 2^N subsets, and creating each subset can take O(N) time. The space complexity is also O(2^N * N) to store all generated subsets.
+The solution uses backtracking to generate all possible subsets. Sorting the input array first allows for efficient handling of duplicates by skipping redundant recursive calls. The time complexity is O(2^N * N) due to generating 2^N subsets, each taking O(N) to copy, and space complexity is similar for storing these subsets.
 
 ---
 *Generated automatically by [CodeStreak](https://github.com/Sharathhv11/CodeStreak-webApp).*
