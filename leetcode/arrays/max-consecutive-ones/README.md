@@ -13,7 +13,7 @@
 - **Space Complexity:** O(1)
 
 ## Explanation
-The solution iterates through the array once, maintaining a count of consecutive ones. When a zero is encountered or the array ends, it updates the maximum count found so far. This approach has a linear time complexity as each element is visited once and a constant space complexity as only a few variables are used for counting.
+The solution iterates through the array once, maintaining a count of consecutive ones. When a zero is encountered, the current count is compared with the maximum count found so far, and the count is reset. The maximum count is updated one last time after the loop to account for trailing ones. This approach ensures a single pass over the array, resulting in linear time complexity and constant space complexity as only a few variables are used.
 
 ---
 *Generated automatically by [CodeStreak](https://github.com/Sharathhv11/CodeStreak-webApp).*
