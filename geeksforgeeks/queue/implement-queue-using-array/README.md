@@ -13,7 +13,7 @@
 - **Space Complexity:** O(N)
 
 ## Explanation
-The solution implements a queue using a Python list. While most operations like initialization, isEmpty, isFull, getFront, and getRear are O(1), the dequeue operation is inefficient. `list.remove(list[0])` takes O(N) time because it requires shifting all subsequent elements to fill the gap left by the removed first element.
+The solution implements a queue using a Python list. While `enqueue`, `getFront`, `getRear`, `isEmpty`, and `isFull` are O(1), `dequeue` is O(N) because `list.remove(list[0])` requires shifting all subsequent elements. The space complexity is O(N) to store up to 'n' elements.
 
 ---
 *Generated automatically by [CodeStreak](https://github.com/Sharathhv11/CodeStreak-webApp).*
