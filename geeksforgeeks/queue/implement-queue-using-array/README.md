@@ -13,7 +13,7 @@
 - **Space Complexity:** O(N)
 
 ## Explanation
-The solution implements a queue using a Python list. While `enqueue`, `getFront`, `getRear`, `isEmpty`, and `isFull` are O(1), `dequeue` is O(N) because `list.remove(list[0])` requires shifting all subsequent elements. The space complexity is O(N) to store up to 'n' elements.
+The solution implements a queue using a Python list. Enqueue and checking fullness/emptiness are O(1) due to list append. Dequeue, however, is O(N) because list.remove(list[0]) requires shifting all subsequent elements. Space complexity is O(N) as it stores up to N elements.
 
 ---
 *Generated automatically by [CodeStreak](https://github.com/Sharathhv11/CodeStreak-webApp).*
